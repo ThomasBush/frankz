@@ -22,4 +22,4 @@ def secure_token
   end
 end
 
-Rails.Application.config.secret_key_base = secure_token
+Rails.application.config.secret_key_base = secure_token
