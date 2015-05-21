@@ -31,6 +31,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Unicorn as the app server
 # gem 'unicorn'
 
+gem 'mysql2'
+
 # Use Capistrano for deployment
 group :development do
   gem 'capistrano-rails'
