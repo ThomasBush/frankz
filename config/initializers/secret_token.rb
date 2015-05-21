@@ -22,4 +22,4 @@ def secure_token
   end
 end
 
-HexCom::Application.config.secret_key_base = secure_token
+Rails.Application.config.secret_key_base = secure_token
