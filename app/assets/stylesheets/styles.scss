@@ -1,6 +1,7 @@
 header {
 
   clear: both;
+  margin-top: 30px;
   overflow: hidden;
   h1 {
     float: left;
@@ -10,6 +11,85 @@ header {
 
     li {
       float: left;
+      font-size: 24px;
+      margin-left: 5px;
+      margin-right: 5px;
+
+      &.selected a {
+        background-color: #310164;
+        color: #FFFFFF;
+      }
+
+      &.first {
+        margin-left: 0;
+      }
+
+      &.last {
+        margin-right: 0;
+      }
+
+      a {
+        color: #310164;
+        border-radius: 5px;
+        font-family: 'coming-soon';
+
+        &:hover {
+          background-color: #310164 !important;
+          color: #FFFFFF;
+        }
+
+      }
     }
+  }
+}
+
+footer {
+  background: #310164;
+  border-radius:8px;
+  color:#FFF;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding: 15px;
+  text-align: center;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+@font-face {
+  font-family: 'coming-soon';
+  src: font-url('ComingSoon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'coming-soon';
+  color: #310164;
+}
+
+#logo a {
+  text-indent: -9999px;
+  background: asset-url('logo.png') 0 0 no-repeat scroll transparent;
+  display: inline-block;
+  height: 65px;
+  width: 224px;
+}
+
+#logo-small {
+  text-indent: -9999px;
+  background: asset-url('logo-small.png') 0 0 no-repeat scroll transparent;
+  display: inline-block;
+  height: 35px;
+  width: 120px;
+}
+
+#menu-page {
+  ul {
+
   }
 }
